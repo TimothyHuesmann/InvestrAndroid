@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InvestrAndroid</string>
+    <string name="title_activity_main_vc">MainVC</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
