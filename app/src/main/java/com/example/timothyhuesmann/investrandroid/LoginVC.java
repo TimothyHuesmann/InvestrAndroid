@@ -1,28 +1,27 @@
 package com.example.timothyhuesmann.investrandroid;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainVC extends ActionBarActivity
+public class LoginVC extends ActionBarActivity
 {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_vc);
+        setContentView(R.layout.activity_login_vc);
     }
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_vc, menu);
+        getMenuInflater().inflate(R.menu.menu_login_vc, menu);
         return true;
     }
 
@@ -35,22 +34,11 @@ public class MainVC extends ActionBarActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings)
+        {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void loginButtonPressed()
-    {
-        Intent i = new Intent(getApplicationContext(), LoginVC.class);
-        startActivity(i);
-    }
-
-    private void registerButtonPressed()
-    {
-        Intent i = new Intent(getApplicationContext(), RegisterVC.class);
-        startActivity(i);
     }
 }
