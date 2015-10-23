@@ -4,18 +4,27 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.content.Intent;
 
 
 public class LoginVC extends ActionBarActivity
 {
+
+    Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_vc);
+        addListenerOnButtons();
     }
 
+    public void addListenerOnButtons()
+    {
+        
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
