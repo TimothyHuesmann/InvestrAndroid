@@ -26,8 +26,8 @@ public class MainVC extends ActionBarActivity
     public void addListenerOnButtons()
     {
         final Context context = this;
-        loginButton = (Button) findViewById(R.id.loginButton);
-        registerButton = (Button) findViewById(R.id.registerButton);
+        loginButton = (Button) findViewById(R.id.loginPageButton);
+        registerButton = (Button) findViewById(R.id.registerPageButton);
 
         loginButton.setOnClickListener(new View.OnClickListener()
         {

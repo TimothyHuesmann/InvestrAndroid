@@ -4,8 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.content.Context;
 
 
 public class LoginVC extends ActionBarActivity
@@ -23,7 +25,16 @@ public class LoginVC extends ActionBarActivity
 
     public void addListenerOnButtons()
     {
-        
+        final Context context = this;
+        loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
     }
 
     @Override
