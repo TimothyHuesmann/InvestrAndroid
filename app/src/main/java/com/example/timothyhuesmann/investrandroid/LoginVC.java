@@ -8,12 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import android.content.Context;
+import android.widget.EditText;
+
+import com.parse.Parse;
+import com.parse.ParseUser;
+import com.parse.LogInCallback;
+import com.parse.ParseException;
 
 
 public class LoginVC extends ActionBarActivity
 {
 
     Button loginButton;
+    EditText usernameTF;
+    EditText passwordTF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,12 +35,26 @@ public class LoginVC extends ActionBarActivity
     {
         final Context context = this;
         loginButton = (Button) findViewById(R.id.loginButton);
+        usernameTF = (EditText) findViewById(R.id.usernameTF);
+        passwordTF = (EditText) findViewById(R.id.passwordTF);
         loginButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
 
+                ParseUser.logInInBackground(usernameTF.getText().toString(), passwordTF.getText().toString(), new LogInCallback() {
+                    public void done(ParseUser user, ParseException e) {
+                        if (user != null)
+                        {
+                            //Success
+
+                        } else
+                        {
+                            //Error
+                        }
+                    }
+                });
             }
         });
     }

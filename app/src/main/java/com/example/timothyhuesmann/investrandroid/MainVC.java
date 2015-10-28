@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
+import com.parse.Parse;
 
 public class MainVC extends ActionBarActivity
 {
@@ -20,6 +20,10 @@ public class MainVC extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_vc);
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this, "FqNt8xkKnxeEdBqV5te9vJAOQQ7dRNsO69Bqno9y", "OQRXEt1TPmN8k9lDG4mWSYGQH7fWSNQf5F2mjhED");
         addListenerOnButtons();
     }
 
