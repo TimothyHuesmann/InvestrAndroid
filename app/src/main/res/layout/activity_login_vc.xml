@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/usernameTF"
+        android:id="@+id/usernameTF_LoginVC"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/passwordTF"
+        android:id="@+id/loginPasswordTF"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/loginButton"
         android:layout_marginTop="62dp"
         android:onClick=""
-        android:layout_below="@+id/passwordTF"
+        android:layout_below="@+id/passwordTF_LoginVC"
         android:layout_alignEnd="@+id/textView4" />
 
 </RelativeLayout>

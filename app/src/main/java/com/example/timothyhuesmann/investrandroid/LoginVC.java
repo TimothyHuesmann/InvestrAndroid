@@ -20,8 +20,8 @@ public class LoginVC extends ActionBarActivity
 {
 
     Button loginButton;
-    EditText usernameTF;
-    EditText passwordTF;
+    EditText usernameTF_LoginVC;
+    EditText passwordTF_LoginVC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -35,15 +35,15 @@ public class LoginVC extends ActionBarActivity
     {
         final Context context = this;
         loginButton = (Button) findViewById(R.id.loginButton);
-        usernameTF = (EditText) findViewById(R.id.usernameTF);
-        passwordTF = (EditText) findViewById(R.id.passwordTF);
+        usernameTF_LoginVC = (EditText) findViewById(R.id.usernameTF_LoginVC);
+        passwordTF_LoginVC = (EditText) findViewById(R.id.passwordTF_LoginVC);
         loginButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
 
-                ParseUser.logInInBackground(usernameTF.getText().toString(), passwordTF.getText().toString(), new LogInCallback() {
+                ParseUser.logInInBackground(usernameTF_LoginVC.getText().toString(), passwordTF_LoginVC.getText().toString(), new LogInCallback() {
                     public void done(ParseUser user, ParseException e) {
                         if (user != null)
                         {

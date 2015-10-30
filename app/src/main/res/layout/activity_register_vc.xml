@@ -29,7 +29,7 @@
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/usernameTF"
+        android:id="@+id/usernameTF_registerVC"
         android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true" />
 
@@ -39,15 +39,15 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Email:"
         android:id="@+id/textView7"
-        android:layout_below="@+id/usernameTF"
+        android:layout_below="@+id/usernameTF_registerVC"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/emailTF"
+        android:id="@+id/emailTF_registerVC"
         android:layout_below="@+id/textView7"
-        android:layout_alignStart="@+id/usernameTF" />
+        android:layout_alignStart="@+id/usernameTF_registerVC" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,13 +55,13 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Phone:"
         android:id="@+id/textView8"
-        android:layout_below="@+id/emailTF"
+        android:layout_below="@+id/emailTF_registerVC"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/phoneTF"
+        android:id="@+id/phoneTF_registerVC"
         android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true" />
 
@@ -77,7 +77,7 @@
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/passwordTF"
+        android:id="@+id/passwordTF_registerVC"
         android:layout_below="@+id/textView9"
         android:layout_centerHorizontal="true" />
 
@@ -87,7 +87,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Confirm Password:"
         android:id="@+id/textView10"
-        android:layout_below="@+id/passwordTF"
+        android:layout_below="@+id/passwordTF_registerVC"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/confirmPasswordTF"
+        android:id="@+id/confirmPasswordTF_registerVC"
         android:layout_below="@+id/textView10"
         android:layout_centerHorizontal="true" />
 
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/registerButton"
-        android:layout_below="@+id/confirmPasswordTF"
+        android:layout_below="@+id/confirmPasswordTF_registerVC"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp" />
 
