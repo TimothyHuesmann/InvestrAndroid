@@ -1,4 +1,4 @@
-package com.example.timothyhuesmann.investrandroid;
+package com.example.timothyhuesmann.investrandroid.VCs;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.Context;
 import android.widget.EditText;
 
+import com.example.timothyhuesmann.investrandroid.R;
 import com.parse.Parse;
 import com.parse.ParseUser;
 import com.parse.LogInCallback;

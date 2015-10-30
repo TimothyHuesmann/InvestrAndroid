@@ -12,7 +12,7 @@
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainVC"
+            android:name=".VCs.MainVC"
             android:label="@string/title_activity_main_vc" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,15 +21,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginVC"
+            android:name=".VCs.LoginVC"
             android:label="@string/title_activity_login_vc" >
         </activity>
         <activity
-            android:name=".RegisterVC"
+            android:name=".VCs.RegisterVC"
             android:label="@string/title_activity_register_vc" >
         </activity>
         <activity
-            android:name=".MenuVC"
+            android:name=".VCs.MenuVC"
             android:label="@string/title_activity_menu_vc" >
         </activity>
     </application>

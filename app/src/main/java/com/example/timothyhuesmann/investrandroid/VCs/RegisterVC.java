@@ -1,4 +1,4 @@
-package com.example.timothyhuesmann.investrandroid;
+package com.example.timothyhuesmann.investrandroid.VCs;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -6,7 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.parse.Parse;
+
+import com.example.timothyhuesmann.investrandroid.R;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;

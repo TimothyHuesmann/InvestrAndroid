@@ -1,9 +1,11 @@
-package com.example.timothyhuesmann.investrandroid;
+package com.example.timothyhuesmann.investrandroid.VCs;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.timothyhuesmann.investrandroid.R;
 import com.parse.Parse;
 import com.parse.ParseUser;
 import android.widget.Button;
