@@ -10,11 +10,16 @@ import android.content.Intent;
 import android.content.Context;
 import android.widget.EditText;
 
+import com.example.timothyhuesmann.investrandroid.InvestrCore;
 import com.example.timothyhuesmann.investrandroid.R;
+import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseUser;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseQuery;
+
+import java.util.List;
 
 
 public class LoginVC extends ActionBarActivity
@@ -49,8 +54,27 @@ public class LoginVC extends ActionBarActivity
                         if (user != null)
                         {
                             //Success
+                            InvestrCore.currUser = usernameTF_LoginVC.getText().toString();
+                            ParseQuery<ParseUser> query = ParseUser.getQuery();
+                            query.whereEqualTo("username", InvestrCore.currUser);
+                            query.findInBackground(new FindCallback<ParseUser>()
+                            {
+                                @Override
+                                public void done(List<ParseUser> objects, ParseException e)
+                                {
+                                    if (e == null)
+                                    {
+                                        InvestrCore.userID = objects.get(0).getObjectId();
+                                    } else
+                                    {
 
-                        } else
+                                    }
+                                }
+                            });
+                            loginSuccess();
+
+                        }
+                        else
                         {
                             //Error
                         }
@@ -83,5 +107,11 @@ public class LoginVC extends ActionBarActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void loginSuccess()
+    {
+        Intent i = new Intent(getApplicationContext(), MenuVC.class);
+        startActivity(i);
     }
 }
